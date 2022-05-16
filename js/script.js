@@ -6,7 +6,7 @@ renderer.setSize( window.innerWidth, window.innerHeight );
 document.body.appendChild( renderer.domElement );
 
 const geometry = new THREE.BoxGeometry();
-const texture = new THREE.TextureLoader().load("logo/CICT.jpeg");
+const texture = new THREE.TextureLoader().load("logo/CICT.jpg");
 const material = new THREE.MeshBasicMaterial( { map: texture });
 const cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
